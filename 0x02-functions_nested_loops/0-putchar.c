@@ -1,18 +1,20 @@
-#include "main.h"
-
+#include "putchar.h"
 /**
- * print_alphabet - prints lower case alphabet
- *
- **/
-
-void print_alphabet(void)
+ * main - Print "Putchar" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
+ * Return: 0
+ */
+int main(void)
 {
+	char putchar[] = "Putchar";
+	int i = 0;
 
-	char i;
-
-	for (i = 'a'; i <= 'z'; i++)
+	while (putchar[i] != '\0')
 	{
-		_putchar(i);
+		_putchar(putchar[i]);
+		i++;
 	}
 	_putchar('\n');
+
+	return (0);
 }
